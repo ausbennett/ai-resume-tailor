@@ -1,5 +1,6 @@
 import sys
 import os
+import json
 from pathlib import Path
 from llama_cpp import Llama
 from jinja2 import Environment, FileSystemLoader
@@ -60,21 +61,25 @@ def compile_latex(latex_content, output_dir="data/output"):
     return pdf_path
 
 def main():
-    model = load_model()
+    # model = load_model()
     
-    if len(sys.argv) < 2:
-        print("Usage: python main.py <job_description_file>")
-        return
+    # if len(sys.argv) < 2:
+    #     print("Usage: python main.py <job_description_file>")
+    #     return
     
-    input_path = Path(sys.argv[1])
-    if not input_path.exists():
-        print(f"File {input_path} not found")
-        return
+    # input_path = Path(sys.argv[1])
+    # if not input_path.exists():
+    #     print(f"File {input_path} not found")
+    #     return
     
-    with open(input_path, 'r') as f:
-        job_desc = f.read()
+    # with open(input_path, 'r') as f:
+    #     job_desc = f.read()
     
-    resume_data = generate_resume_content(model, job_desc)
+    # resume_data = generate_resume_content(model, job_desc)
+
+    with open ('templates/data.json') as f:
+        resume_data = json.load(f)
+
     latex_content = render_template(resume_data)
     output_pdf = compile_latex(latex_content)
     

@@ -1,0 +1,66 @@
+{
+    "personal_info": {
+      "name": "Prashant Singh",
+      "phone": "1234567890",
+      "email": "prashant@example.com",
+      "roll_number": "1234567",
+      "degree": "Bachelor of Technology in Computer Science and Engineering",
+      "university": "Shri Ramdeobaba College of Engineering and Management, Nagpur",
+      "github_url": "https://github.com/username",
+      "github_display": "GitHub Profile",
+      "linkedin_url": "https://linkedin.com/in/username",
+      "linkedin_display": "LinkedIn Profile"
+    },
+    "education": [
+      {
+        "title": "Bachelor of Technology in Computer Science and Engineering (Cyber Security)",
+        "right_bottom": "CGPA: 9.0",
+        "left_bottom": "Shri Ramdeobaba College of Engineering and Management, Nagpur",
+        "right_top": "2020-2024"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Web-Based Facial Authentication",
+        "subtitle": "A Chrome Extension for secure logins",
+        "dates_top_right": "",
+        "details_bottom_right": "",
+        "description": [
+          "Implemented liveness detection for security.",
+          "Tech: Python, React, OpenCV."
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "title": "AWS Cloud Internship",
+        "right_bottom": "Online",
+        "left_bottom": "AICTE-Eduskills",
+        "right_top": "May-July 2023",
+        "description": [
+          "Deployed scalable AWS solutions.",
+          "Used EC2, S3, Lambda."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "category": "Languages",
+        "items": "Python, JavaScript, C++"
+      },
+      {
+        "category": "Frameworks",
+        "items": "React, Node.js"
+      }
+    ],
+    "por_items": [
+      {
+        "title": "Event Volunteer",
+        "organization": "Tech Fest 2022",
+        "dates": "Oct-Dec 2022",
+        "description": [
+          "Managed registrations for 300+ attendees."
+        ]
+      }
+    ]
+  }
