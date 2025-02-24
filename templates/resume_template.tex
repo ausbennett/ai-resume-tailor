@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{hyperref}
+
+\title{ {{- resume_title -}} }
+\author{ {{- resume_author -}} }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+{% if skills|length > 0 %}
+\section{Skills}
+\begin{itemize}
+    {% for skill in skills %}
+        \item {{ skill }}
+    {% endfor %}
+\end{itemize}
+{% endif %}
+
+{% if experience|length > 0 %}
+\section{Experience}
+\begin{itemize}
+    {% for exp in experience %}
+        \item {{ exp }}
+    {% endfor %}
+\end{itemize}
+{% endif %}
+
+{% if achievements|length > 0 %}
+\section{Achievements}
+\begin{itemize}
+    {% for achievement in achievements %}
+        \item {{ achievement }}
+    {% endfor %}
+\end{itemize}
+{% endif %}
+
+\end{document}
