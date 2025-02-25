@@ -1,0 +1,36 @@
+Summary
+Posted: Dec 7, 2024
+Weekly Hours: 37.5
+Role Number:200581436
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. Bring passion and dedication to your job and there's no telling what you could accomplish.   
+
+The people here at Apple don’t just create products — they create the kind of wonder that’s revolutionized entire industries. It’s the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it.   
+
+Apple's Manufacturing Systems and Infrastructure (MSI) team is responsible for capturing, consolidating and tracking all manufacturing data for Apple’s products and modules worldwide. We are a multi-functional team, tackling challenging software engineering problems across a broad range of Apple manufacturing services. You'll be leading innovation by exploring, investigating, recommending, benchmarking and implementing full stack technologies for the platform. This data is used throughout the company and the product's lifecycle: from the very beginning, to validate that units being built are fully tested and of high quality before leaving the factory, all of the way through to warranty support for customers.
+Description
+Design, develop, and maintain scalable, reliable, and efficient software services.
+Implement monitoring, alerting, and logging systems to ensure the health and performance of applications.
+Automate repetitive tasks and improve system efficiency through scripting and tool development.
+Collaborate with development teams to improve service reliability and promote best practices in software development and deployment.
+Conduct root cause analysis of system failures and implement corrective actions to prevent recurrence.
+Drive continuous improvement initiatives to enhance system performance, scalability, and reliability.
+Mentor and provide guidance to junior team members, fostering a culture of learning and innovation.
+Minimum Qualifications
+7+ years of experience in software engineering, DevOps, or a related field.
+Bachelor’s degree in Computer Science, Engineering, or a related field, or equivalent practical experience.
+Preferred Qualifications
+Experience with cloud platform like: AWS
+Expertise in containerization and orchestration: Docker or Kubernetes.
+Proficient in object-oriented design
+Experience with languages such as Python, Typescript or Java
+Experience leading major initiatives successfully
+Experienced in utilizing data and analysis to explain technical problems and providing detailed feedback and solutions
+Experience with database management and optimization: MySQL, PostgreSQL
+Experience with database schema design and implementation.
+Experience database profiling, tuning for high performance.
+Experience with frontend frameworks like Angular and React
+Experience with CI/CD pipelines and tools: GitHub, Jenkins.
+Knowledge of monitoring and observability tools: Prometheus, Grafana, Open Telemetry, Splunk
+Familiarity with version control systems: Git
+Solid understanding of Linux/Unix system administration and networking.
+Excellent problem-solving skills and a proactive approach to incident management.

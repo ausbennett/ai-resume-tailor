@@ -1,66 +1,62 @@
 {
-    "personal_info": {
-      "name": "Prashant Singh",
-      "phone": "1234567890",
-      "email": "prashant@example.com",
-      "roll_number": "1234567",
-      "degree": "Bachelor of Technology in Computer Science and Engineering",
-      "university": "Shri Ramdeobaba College of Engineering and Management, Nagpur",
-      "github_url": "https://github.com/username",
-      "github_display": "GitHub Profile",
-      "linkedin_url": "https://linkedin.com/in/username",
-      "linkedin_display": "LinkedIn Profile"
-    },
-    "education": [
-      {
-        "title": "Bachelor of Technology in Computer Science and Engineering (Cyber Security)",
-        "right_bottom": "CGPA: 9.0",
-        "left_bottom": "Shri Ramdeobaba College of Engineering and Management, Nagpur",
-        "right_top": "2020-2024"
-      }
-    ],
-    "projects": [
-      {
-        "title": "Web-Based Facial Authentication",
-        "subtitle": "A Chrome Extension for secure logins",
-        "dates_top_right": "",
-        "details_bottom_right": "",
-        "description": [
-          "Implemented liveness detection for security.",
-          "Tech: Python, React, OpenCV."
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "title": "AWS Cloud Internship",
-        "right_bottom": "Online",
-        "left_bottom": "AICTE-Eduskills",
-        "right_top": "May-July 2023",
-        "description": [
-          "Deployed scalable AWS solutions.",
-          "Used EC2, S3, Lambda."
-        ]
-      }
-    ],
-    "skills": [
-      {
-        "category": "Languages",
-        "items": "Python, JavaScript, C++"
-      },
-      {
-        "category": "Frameworks",
-        "items": "React, Node.js"
-      }
-    ],
-    "por_items": [
-      {
-        "title": "Event Volunteer",
-        "organization": "Tech Fest 2022",
-        "dates": "Oct-Dec 2022",
-        "description": [
-          "Managed registrations for 300+ attendees."
-        ]
-      }
-    ]
-  }
+  "personal_info": {
+    "name": "<Full Name>",
+    "phone": "<Phone with Country Code>",
+    "email": "<professional.email@domain.com>",
+    "roll_number": "<University ID>",
+    "degree": "<Degree Name>",
+    "university": "<University Name, City>",
+    "github_url": "<https://github.com/username>",
+    "github_display": "<GitHub Profile>",
+    "linkedin_url": "<https://linkedin.com/in/username>",
+    "linkedin_display": "<LinkedIn Profile>"
+  },
+  "education": [
+    {
+      "title": "<Degree Title> (e.g.: B.Tech Computer Science)",
+      "right_bottom": "<Metrics> (e.g.: GPA: 3.8/4.0)",
+      "left_bottom": "<Institution Details> (e.g.: MIT, Cambridge MA)",
+      "right_top": "<Date Range> (e.g.: 2020-2024)"
+    }
+  ],
+  "projects": [
+    {
+      "title": "<Project Name>",
+      "subtitle": "<Brief Context> (e.g.: AI-Powered Document Analyzer)",
+      "dates_top_right": "<Duration> (e.g.: Jan-Apr 2023)",
+      "details_bottom_right": "<Technical Specs> (e.g.: Python, PyTorch)",
+      "description": [
+        "<Quantified Achievement> (e.g.: Reduced processing time by 40%)",
+        "<Technical Detail> (e.g.: Implemented transformer model)"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "<Role> (e.g.: Cloud Engineering Intern)",
+      "right_bottom": "<Location/Type> (e.g.: Remote)",
+      "left_bottom": "<Company> (e.g.: Google Cloud)",
+      "right_top": "<Dates> (e.g.: Summer 2023)",
+      "description": [
+        "<Impactful Verb> + <Metric> (e.g.: Optimized AWS costs by $12k/year)",
+        "<Technical Scope> (e.g.: Migrated 50+ EC2 instances)"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "<Category> (e.g.: Languages)",
+      "items": "<Comma-Separated List> (e.g.: Python, Java)"
+    }
+  ],
+  "por_items": [
+    {
+      "title": "<Position> (e.g.: Event Coordinator)",
+      "organization": "<Organization> (e.g.: ACM Student Chapter)",
+      "dates": "<Dates> (e.g.: Fall 2022)",
+      "description": [
+        "<Action + Result> (e.g.: Organized hackathon with 200+ participants)"
+      ]
+    }
+  ]
+}

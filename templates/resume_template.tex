@@ -62,8 +62,12 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
+% \titleformat{\section}{
+%   \vspace{-4pt}\scshape\raggedright\large
+% }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 %-------------------------
@@ -129,10 +133,10 @@
 {
 \begin{tabularx}{\linewidth}{L r}
   \textbf{\Large {{ personal_info.name }}} & 
-  {\raisebox{0.0\height}{\footnotesize \faPhone} +91-{{ personal_info.phone }}} \\
+  {\raisebox{0.0\height}{\footnotesize \faPhone} {{ personal_info.phone }}} \\
   {Roll No.: {{ personal_info.roll_number }}} & 
   \href{mailto:{{ personal_info.email }}}{\raisebox{0.0\height}{\footnotesize \faEnvelope} {{ personal_info.email }}} \\
-  {{ personal_info.degree }} & 
+  {{ personal_info.degree | latex_escape }} & 
   \href{ {{ '{{' }} personal_info.github_url {{ '}}' }} }{\raisebox{0.0\height}{\footnotesize \faGithub} {{ personal_info.github_display }}} \\  
   {{ personal_info.university }} & 
   \href{ {{ '{{' }} personal_info.linkedin_url {{ '}}' }} }{\raisebox{0.0\height}{\footnotesize \faLinkedin} {{ personal_info.linkedin_display }}}
@@ -145,8 +149,8 @@
   \resumeSubHeadingListStart
     {% for edu in education %}
     \resumeSubheading
-      { {{ edu.title }} }{ {{ edu.right_bottom }} }
-      { {{ edu.left_bottom }} }{ {{ edu.right_top }} }
+      { {{ edu.title | latex_escape }} }{ {{ edu.right_bottom | latex_escape }} }
+      { {{ edu.left_bottom | latex_escape }} }{ {{ edu.right_top | latex_escape }} }
     {% endfor %}
   \resumeSubHeadingListEnd
 
@@ -155,13 +159,13 @@
 \resumeSubHeadingListStart
   {% for project in projects %}
     \resumeProject
-      { {{ project.title }} }
-      { {{ project.subtitle }} }
-      { {{ project.dates_top_right }} }
-      { {{ project.details_bottom_right }} }
+      { {{ project.title | latex_escape }} }
+      { {{ project.subtitle | latex_escape  }} }
+      { {{ project.dates_top_right | latex_escape }} }
+      { {{ project.details_bottom_right | latex_escape }} }
       \resumeItemListStart
         {% for item in project.description %}
-        \item { {{ item }} }
+        \resumeItem { {{ item | latex_escape }} }
         {% endfor %}
       \resumeItemListEnd
   {% endfor %}
@@ -176,7 +180,7 @@
       { {{ exp.left_bottom }} }{ {{ exp.right_top }} }
       \resumeItemListStart
         {% for item in exp.description %}
-        \item { {{ item }} }
+        \resumeItem { {{ item | latex_escape }} }
         {% endfor %}
       \resumeItemListEnd
     {% endfor %}
@@ -187,25 +191,28 @@
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
      {% for skill in skills %}
-     \textbf{ {{ skill.category }} }{: {{ skill.items }} } \\
+     \textbf{ {{ skill.category | latex_escape }} }{: {{ skill["items"]| latex_escape }} } \\
      {% endfor %}
     }}
  \end{itemize}
 
 %-----------POSITIONS OF RESPONSIBILITY-----------
+
+{% if por_items %}
 \section{\textbf{Positions of Responsibility}}
 \resumeSubHeadingListStart
   {% for por in por_items %}
     \resumePOR
-      { {{ por.title }} }
-      { {{ por.organization }} }
-      { {{ por.dates }} }
+      { {{ por.title | latex_escape  }} }
+      { {{ por.organization | latex_escape }} }
+      { {{ por.dates | latex_escape }} }
       \resumeItemListStart
         {% for item in por.description %}
-        \item { {{ item }} }
+        \resumeItem { {{ item | latex_escape }} }
         {% endfor %}
       \resumeItemListEnd
   {% endfor %}
 \resumeSubHeadingListEnd
+{% endif %}
 
 \end{document}
