@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in Latex
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Austin Bennett} \\ \vspace{1pt}
+    \small 647-464-7281 $|$ \href{mailto:dev.austinbennett@gmail.com}{dev.austinbennett@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/ausbennett/}{linkedin.com/in/ausbennett} $|$
+    \href{https://github.com/ausbennett}{github.com/ausbennett} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McMaster University}{Hamilton, ON}
+      {B.Eng. Software Engineering \& Management}{Sept 2019 -- April 2025}
+        \begin{itemize}
+          \item Notable Coursework: Data Structure \& Algorithms, Software Testing, Databases, Computer Networks \& Security
+        \end{itemize}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Equinix}{Toronto, ON}
+      {Software Developer Intern}{May 2024 -- Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Selected as a top 4 finalist in the Equinix Sharktank competition, outshining interns across North America.}
+        \resumeItem{Championed the deployment of \textbf{Ansible} as a network configuration management tool, projected to \textbf{save 360 hours annually}.}
+        \resumeItem{Automated the conversion of network inventory data to Ansible YAML files using Python and Pandas, streamlining configuration workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TD Bank}{Toronto, ON}
+      {DevOps Engineer Intern}{Jan 2023 -- Aug 2023}
+      \resumeItemListStart
+        \resumeItem{Led cross-team communication for \textbf{Azure Cloud} migration over 3 months, improving scalability and reliability.}
+        \resumeItem{Automated release deployments using \textbf{Java Selenium} and \textbf{Rundeck}, saving 2 hours per release cycle.}
+        \resumeItem{Managed \textbf{Jenkins CI/CD} processes for \emph{20 builds weekly}, ensuring \emph{85\% successful} build and test rate.}
+        \resumeItem{Resolved approximately 10 \textbf{Git} conflicts and \textbf{Jenkins} issues monthly, \emph{reducing resolution time by 25\%}.}
+      \resumeItemListEnd
+
+      \resumeSubSubheading
+        {Software Engineer Intern}{May 2022 -- Aug 2022}
+        \resumeItemListStart
+          \resumeItem{Tested \textbf{Spring Boot} REST API for \textbf{Angular} EasyWeb banking applications.}
+          \resumeItem{Collaborated closely with the UX/UI design team to transform \textbf{Figma} designs into fully functional and interactive web components.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Finance Platform (Capstone Project)} $|$ \emph{React, Next.js, Express.js, MongoDB}}{Sept 2024 -- April 2025}
+          \resumeItemListStart
+            \resumeItem{Led the design and development of a financial platform managing \$2M in club funding, enhancing transparency and accountability.}
+            \resumeItem{Built the platform from the ground up to support the financial transparency and accountability of student organizations.}
+            \resumeItem{Developed a scalable platform using \textbf{React, Next.js, and MongoDB} to streamline club financial processes.}
+            \resumeItem{Defined development roadmaps with \textbf{GitHub Projects}, ensuring timely delivery of key features.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Google Student Developer Club $|$ \href{https://github.com/DSC-McMaster-U/ai-journal}{\underline{AI Journal}}, \href{https://github.com/DSC-McMaster-U/Auto-ML}{\underline{AutoML}}}}{Sept 2023 -- April 2025}
+          \resumeItemListStart
+            \resumeItem{Spearheaded DevOps operations to streamline workflows for both the \textbf{AI Journal Application} \emph{(Espressly)} and \emph{(AutoML)}.}
+            \resumeItem{Designed a robust cloud architecture for a user-friendly machine learning service on \textbf{Google Cloud Platform}.}
+            \resumeItem{Authored comprehensive \textbf{Docker} configurations for each component of the application stack, enhancing portability and deployment efficiency.}
+            \resumeItem{Incorporated \textbf{Terraform} as a core tool in the \textbf{GitHub Actions CI/CD} pipeline, allowing for automated provisioning and management of cloud infrastructure on GCP.}
+            \resumeItem{Successfully integrated \textbf{Google Kubernetes Engine} (GKE) to orchestrate container deployment, scaling, and management, achieving high availability and streamlined rollouts of application updates.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+
+ \section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Bash, Haskell, HTML, Java, JavaScript, JSON, Python, SQL, TypeScript} \\
+     \textbf{Tools \& Platforms}{: Ansible, Atlassian Suite, Azure Cloud, Docker, Figma, GitHub Actions, Google Cloud, Jenkins, Kubernetes, Postman, Selenium, Terraform, VIM} \\
+     \textbf{Libraries \& Frameworks}{: Angular, React, Bootstrap, Next.js, Express.js, FastAPI, Flask, Node.js, Spring Boot, NumPy, Pandas, MongoDB, MySQL, JUnit} \\
+     \textbf{Credentials}{: Microsoft Azure Fundamentals: AZ-900 (\emph{ID: 7482FE61CE96C076})}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

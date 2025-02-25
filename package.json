@@ -1,0 +1,23 @@
+{
+  "name": "ai-resume-tailor",
+  "version": "0.0.1",
+  "description": "AI Resume Tailor App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ausbennett/ai-resume-tailor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ausbennett/ai-resume-tailor/issues"
+  },
+  "homepage": "https://github.com/ausbennett/ai-resume-tailor#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "openai": "^4.85.4"
+  }
+}

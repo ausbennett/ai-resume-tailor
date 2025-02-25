@@ -1,0 +1,55 @@
+{
+    "personal_info": {
+        "name": "Bobby Dobby",
+        "phone": "+1 123 456 7890",
+        "email": "email@email.com",
+        "roll_number": "1234",
+        "degree": "Software Engineering & Management",
+        "university": "McMaster University, Canada",
+        "github_url": "https://github.com/username",
+        "github_display": "FartGuy123",
+        "linkedin_url": "https://linkedin.com/in/username",
+        "linkedin_display": "BobbyDobby"
+    },
+    "experiences": [
+      {
+        "role": "AWS Cloud Intern",
+        "company": "AICTE-Eduskills",
+        "duration": "May-July 2023",
+        "details": [
+          "Deployed scalable AWS solutions using EC2 and S3",
+          "Implemented Lambda functions for automated workflows",
+          "Optimized cloud infrastructure costs by 15%"
+        ]
+      },
+      {
+        "role": "SWE Intern",
+        "company": "Fart Inc.",
+        "duration": "May-July 2024",
+        "details": [
+          "Deployed scalable AWS solutions using EC2 and S3",
+          "Implemented Lambda functions for automated workflows",
+          "Optimized cloud infrastructure costs by 15%"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Web-Based Facial Authentication",
+        "tech_stack": ["Python", "React", "OpenCV"],
+        "achievements": [
+          "Implemented liveness detection with 98% accuracy",
+          "Reduced authentication time by 40%"
+        ]
+      }
+    ],
+    "skills": {
+      "programming": ["Python", "JavaScript", "C++"],
+      "cloud": ["AWS EC2", "S3", "Lambda"],
+      "web": ["React", "Node.js"]
+    },
+    "achievements": [
+      "Won 1st prize in Cloud Computing Hackathon 2023",
+      "Certified AWS Solutions Architect Associate"
+    ]
+  }
