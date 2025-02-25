@@ -2,8 +2,10 @@
   "name": "ai-resume-tailor",
   "version": "0.0.1",
   "description": "AI Resume Tailor App",
-  "main": "index.js",
   "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,8 +18,7 @@
     "url": "https://github.com/ausbennett/ai-resume-tailor/issues"
   },
   "homepage": "https://github.com/ausbennett/ai-resume-tailor#readme",
-  "dependencies": {
-    "express": "^4.21.2",
-    "openai": "^4.85.4"
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
